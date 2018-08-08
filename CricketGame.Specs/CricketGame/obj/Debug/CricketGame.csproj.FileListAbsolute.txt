@@ -1,0 +1,6 @@
+C:\Users\pgoel\source\repos\CricketGame.Specs\CricketGame\bin\Debug\CricketGame.dll
+C:\Users\pgoel\source\repos\CricketGame.Specs\CricketGame\bin\Debug\CricketGame.pdb
+C:\Users\pgoel\source\repos\CricketGame.Specs\CricketGame\obj\Debug\CricketGame.csproj.CoreCompileInputs.cache
+C:\Users\pgoel\source\repos\CricketGame.Specs\CricketGame\obj\Debug\CricketGame.dll
+C:\Users\pgoel\source\repos\CricketGame.Specs\CricketGame\obj\Debug\CricketGame.pdb
+C:\Users\pgoel\source\repos\CricketGame.Specs\CricketGame\obj\Debug\CricketGame.csprojResolveAssemblyReference.cache
