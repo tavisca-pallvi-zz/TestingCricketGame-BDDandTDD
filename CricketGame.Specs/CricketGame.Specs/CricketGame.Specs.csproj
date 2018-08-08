@@ -73,6 +73,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MultiPlayerCricketGame.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultiPlayerCricketGame.feature</DependentUpon>
+    </Compile>
+    <Compile Include="MultiPlayerCricketGameSteps.cs" />
     <Compile Include="PlayerScoreSteps.cs" />
     <Compile Include="SpecFlowFeature1.feature.cs">
       <AutoGen>True</AutoGen>
@@ -83,6 +89,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="MultiPlayerCricketGame.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MultiPlayerCricketGame.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
     <None Include="SpecFlowFeature1.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

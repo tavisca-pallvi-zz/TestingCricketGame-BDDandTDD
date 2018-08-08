@@ -1,11 +1,24 @@
 ﻿Feature: WinnerCricket
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
-
+    In order to enjoy a game of cricket
+	As a player
+	I want to be told my score
 @mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+Scenario: 
+	Given Scenario: Player score is zero when game starts	
+	When  Player starts a game of cricket
+	Then the player score should be 0
+
+Scenario: Player should be able to score runs
+	Given Player has started a game of cricket
+	When  Player scores 4 runs
+	Then  Player score should be 4
+	
+Scenario: Player should be able to score run multiple times
+	Given Player has started a game of cricket
+    Given Player has scored 4 runs
+	When  Player scores 3 runs
+	Then  Player score should be 7
+	
+	And 
+	When 
+	Then 
