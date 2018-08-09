@@ -97,7 +97,7 @@ namespace CricketGame.Specs
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("PlayerFirst should be able to score runs", ((string[])(null)));
 #line 12
- this.ScenarioSetup(scenarioInfo);
+    this.ScenarioSetup(scenarioInfo);
 #line 13
  testRunner.Given("Cricket game has started", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 14
@@ -115,7 +115,7 @@ namespace CricketGame.Specs
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("PlayerSecond should be able to score runs", ((string[])(null)));
 #line 17
- this.ScenarioSetup(scenarioInfo);
+    this.ScenarioSetup(scenarioInfo);
 #line 18
  testRunner.Given("Cricket game has started", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 19
@@ -132,15 +132,15 @@ namespace CricketGame.Specs
         public virtual void PlayerFirstShouldBeAbleToScoreMultipleRuns()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("PlayerFirst should be able to score multiple runs", ((string[])(null)));
+#line 23
+   this.ScenarioSetup(scenarioInfo);
 #line 24
- this.ScenarioSetup(scenarioInfo);
-#line 25
  testRunner.Given("Cricket game has started", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 26
+#line 25
  testRunner.And("PlayerFirst has scored 4 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 26
+     testRunner.When("PlayerFirst scores 3 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 27
-    testRunner.When("PlayerFirst scores 3 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 28
  testRunner.Then("PlayerFirst scores should be 7", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -152,15 +152,15 @@ namespace CricketGame.Specs
         public virtual void PlayerSecondShouldBeAbleToScoreMultipleRuns()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("PlayerSecond should be able to score multiple runs", ((string[])(null)));
-#line 32
- this.ScenarioSetup(scenarioInfo);
-#line 33
+#line 29
+   this.ScenarioSetup(scenarioInfo);
+#line 30
  testRunner.Given("Cricket game has started", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 34
+#line 31
  testRunner.And("PlayerSecond has scored 3 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 35
+#line 32
  testRunner.When("PlayerSecond scores 6 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 36
+#line 33
  testRunner.Then("PlayerSecond scores should be 9", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -172,17 +172,17 @@ namespace CricketGame.Specs
         public virtual void PlayerFirstShouldNotBeAbleToScoreRunsAfterGettingOut()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("PlayerFirst should not be able to score runs after getting out", ((string[])(null)));
-#line 40
- this.ScenarioSetup(scenarioInfo);
-#line 41
+#line 35
+   this.ScenarioSetup(scenarioInfo);
+#line 36
  testRunner.Given("Cricket game has started", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 42
+#line 37
  testRunner.And("PlayerFirst has scored 4 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 43
+#line 38
  testRunner.And("PlayerFirst gets out", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 45
+#line 39
  testRunner.When("PlayerFirst scores 3 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 46
+#line 40
  testRunner.Then("PlayerFirst scores should be 4", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -194,17 +194,17 @@ namespace CricketGame.Specs
         public virtual void PlayerSecondShouldNotBeAbleToScoreRunsAfterGettingOut()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("PlayerSecond should not be able to score runs after getting out", ((string[])(null)));
-#line 48
- this.ScenarioSetup(scenarioInfo);
-#line 49
+#line 42
+   this.ScenarioSetup(scenarioInfo);
+#line 43
  testRunner.Given("Cricket game has started", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 50
+#line 44
  testRunner.And("PlayerSecond has scored 3 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 51
+#line 45
  testRunner.And("PlayerSecond gets out", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 52
+#line 46
  testRunner.When("PlayerSecond scores 6 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 53
+#line 47
  testRunner.Then("PlayerSecond scores should be 3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -216,15 +216,15 @@ namespace CricketGame.Specs
         public virtual void PlayerSecondIsWinner()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("PlayerSecond is winner", ((string[])(null)));
-#line 56
- this.ScenarioSetup(scenarioInfo);
-#line 57
+#line 50
+   this.ScenarioSetup(scenarioInfo);
+#line 51
  testRunner.Given("Cricket game has started", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 58
+#line 52
  testRunner.And("PlayerSecond has scored 9 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 59
+#line 53
  testRunner.And("PlayerFirst has scored  6 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 60
+#line 54
  testRunner.Then("PlayerSecond is winner", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -236,15 +236,15 @@ namespace CricketGame.Specs
         public virtual void PlayerFirstIsWinner()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("PlayerFirst is winner", ((string[])(null)));
-#line 63
- this.ScenarioSetup(scenarioInfo);
-#line 64
+#line 57
+    this.ScenarioSetup(scenarioInfo);
+#line 58
  testRunner.Given("Cricket game has started", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 65
+#line 59
  testRunner.And("PlayerFirst has scored 6 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 66
+#line 60
  testRunner.And("PlayerSecond has scored 3 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 67
+#line 61
  testRunner.Then("PlayerFirst is winner", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -256,15 +256,15 @@ namespace CricketGame.Specs
         public virtual void MatchIsTie()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Match is tie", ((string[])(null)));
-#line 69
+#line 63
     this.ScenarioSetup(scenarioInfo);
-#line 70
+#line 64
  testRunner.Given("Cricket game has started", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 71
+#line 65
  testRunner.And("PlayerFirst has scored 6 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 72
+#line 66
  testRunner.And("PlayerSecond has scored 6 runs", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 73
+#line 67
  testRunner.Then("Match is tie", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

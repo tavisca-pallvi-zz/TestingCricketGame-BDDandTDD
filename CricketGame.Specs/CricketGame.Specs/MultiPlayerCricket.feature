@@ -23,7 +23,7 @@
    Scenario: PlayerFirst should be able to score multiple runs	
 	Given  Cricket game has started
 	And PlayerFirst has scored 4 runs
-        When PlayerFirst scores 3 runs
+     When PlayerFirst scores 3 runs
 	Then  PlayerFirst scores should be 7
 
    Scenario: PlayerSecond should be able to score multiple runs	

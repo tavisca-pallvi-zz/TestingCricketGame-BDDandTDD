@@ -21,16 +21,7 @@ namespace Cricketgame.test
             player.Score(4);
             Assert.IsTrue(player.PlayerScore == 4);        
         }
-        
-        [Ignore]
-        [TestMethod]
-        public void Score_InValidRuns_ShouldNotUpdatePlayerScore()
-        {
-            var player = new Cricket();
-            player.Score(7);
-            Assert.IsTrue(player.PlayerScore == 7);
-        }
-
+ 
      [TestMethod]
         public void Winner_OfGame_ShouldBe_PlayerSecond()
         {
