@@ -11,7 +11,6 @@ namespace CricketGame.Specs
     {
         private Cricket _playerFirst=null, _playerSecond=null;
       
-
         [When(@"PlayerFirst and PlayerSecond starts a game of cricket")]
         [Given(@" Cricket game has started")]
         public void When_playerFirstAndPlayerSecondStartsAGameOfCricket()
@@ -32,7 +31,6 @@ namespace CricketGame.Specs
         [When(@"PlayerFirst scores (.*) runs")]
         public void WhenPlayerFirstScoresRuns(int scores)
         {
-           
             _playerFirst.Score(scores);
         }
 
@@ -46,8 +44,7 @@ namespace CricketGame.Specs
         [When(@"PlayerSecond scores (.*) runs")]
         public void WhenPlayerSecondScoresRuns(int scores)
         {
-            
-                _playerSecond.Score(scores);
+            _playerSecond.Score(scores);
         }
 
         [Then(@"PlayerSecond scores should be (.*)")]
@@ -80,6 +77,7 @@ namespace CricketGame.Specs
         {
             _playerFirst.GetOut();
         }
+        
         [Given(@"PlayerSecond gets out")]
         public void GivenPlayerSecondGetsOut()
         {
@@ -106,7 +104,6 @@ namespace CricketGame.Specs
         [Then(@"Match is tie")]
         public void ThenMatchIsTie()
         {
-
             _playerSecond.Winner(_playerFirst);
             _playerFirst.isWinner.Should().Be(true);
             _playerSecond.isWinner.Should().Be(true);
