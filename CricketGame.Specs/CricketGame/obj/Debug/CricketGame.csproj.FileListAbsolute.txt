@@ -4,3 +4,8 @@ C:\Users\pgoel\source\repos\CricketGame.Specs\CricketGame\obj\Debug\CricketGame.
 C:\Users\pgoel\source\repos\CricketGame.Specs\CricketGame\obj\Debug\CricketGame.dll
 C:\Users\pgoel\source\repos\CricketGame.Specs\CricketGame\obj\Debug\CricketGame.pdb
 C:\Users\pgoel\source\repos\CricketGame.Specs\CricketGame\obj\Debug\CricketGame.csprojResolveAssemblyReference.cache
+C:\Users\HP\source\repos\Crickettest\CricketGame.Specs\CricketGame\bin\Debug\CricketGame.dll
+C:\Users\HP\source\repos\Crickettest\CricketGame.Specs\CricketGame\bin\Debug\CricketGame.pdb
+C:\Users\HP\source\repos\Crickettest\CricketGame.Specs\CricketGame\obj\Debug\CricketGame.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Crickettest\CricketGame.Specs\CricketGame\obj\Debug\CricketGame.dll
+C:\Users\HP\source\repos\Crickettest\CricketGame.Specs\CricketGame\obj\Debug\CricketGame.pdb

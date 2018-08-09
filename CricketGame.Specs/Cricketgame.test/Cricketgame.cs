@@ -10,30 +10,87 @@ namespace Cricketgame.test
         [TestMethod]
         public void PlayerScore_NewGame_ShouldbeZero()
         {
-            var game = new Cricket();
+            var player = new Cricket();
 
-            Assert.IsTrue(game.PlayerScore == 0);
+            Assert.IsTrue(player.PlayerScore == 0);
 
 
         }
         [TestMethod]
         public void Score_ValidRuns_ShouldUpdatePlayerScore()
         {
-            var game = new Cricket();
-            game.Score(4);
-            Assert.IsTrue(game.PlayerScore == 4);
+            var player = new Cricket();
+            player.Score(4);
+            Assert.IsTrue(player.PlayerScore == 4);
 
 
         
     }
+    [Ignore]
     [TestMethod]
     public void Score_InValidRuns_ShouldNotUpdatePlayerScore()
     {
-        var game = new Cricket();
-        game.Score(7);
-        Assert.IsTrue(game.PlayerScore == 0);
+        var player = new Cricket();
+            player.Score(7);
+        Assert.IsTrue(player.PlayerScore == 7);
 
 
     }
-}
+
+     [TestMethod]
+        public void Winner_OfGame_ShouldBe_PlayerSecond()
+        {
+            var player1 = new Cricket();
+            var player2 = new Cricket();
+
+            player1.Score(8);
+            player2.Score(9);
+            player1.Winner(player2);
+            Assert.IsTrue(player2.isWinner == true&& player1.isWinner == false);
+
+
+        }
+
+        [TestMethod]
+        public void Winner_OfGame_ShouldBe_PlayerFirst()
+        {
+            var player1 = new Cricket();
+            var player2 = new Cricket();
+
+            player1.Score(10);
+            player2.Score(9);
+            player1.Winner(player2);
+            Assert.IsTrue(player1.isWinner == true&&player2.isWinner==false);
+
+
+        }
+        [TestMethod]
+        public void Game_is_Tie()
+        {
+            var player1 = new Cricket();
+            var player2 = new Cricket();
+
+            player1.Score(9);
+            player2.Score(9);
+            player1.Winner(player2);
+            Assert.IsTrue(player1.isWinner == true&& player2.isWinner == true);
+
+
+        }
+
+
+
+        [TestMethod]
+        public void Player_NotUpdateScore_GetOut()
+        {
+            var player = new Cricket();
+           
+            player.Score(9);
+            player.GetOut();
+            player.Score(10);
+            Assert.IsTrue(player.PlayerScore == 9);
+
+
+        }
+    }
 }
